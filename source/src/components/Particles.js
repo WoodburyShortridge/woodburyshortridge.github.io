@@ -1,38 +1,37 @@
 import React from 'react';
+import styled from 'styled-components';
 // import particlesJS from '../animations/particles.js';
 import Particles from 'react-particles-js';
 import particlesConfig from '../animations/particles-config.json';
 import Header from './Header';
 
-const svgStyle = {
-  position: 'absolute',
-  top: '520px',
-  transform: 'scaleY(-1)',
-  WebkitTransform: 'scaleY(-1)',
-  MozTransform: 'scaleY(-1)',
-  MsTransform: 'scaleY(-1)',
-};
+const SvgWave = styled.svg`
+  position: absolute;
+  top: 530px;
+  transform: scaleY(-1);
+  height: 80px;
+  
+  @media (max-width: 1000px) {
+    height: 40px;
+    top: 570px;
+  }
+`;
 
-const particlesStyle = {
-  width: '100%',
-  position: 'absolute',
-  zIndex: '-1',
-  background: 'linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB)',
-  backgroundSize: '400% 400%',
-  WebkitAnimation: 'Gradient 35s ease infinite',
-  MozAnimation: 'Gradient 35s ease infinite',
-  MsAnimation: 'Gradient 35s ease infinite',
-  animation: 'Gradient 35s ease infinite',
-};
+const ParticlesGrad = styled(Particles)`
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size:400% 400%;
+  animation: Gradient 35s ease infinite;
+`;
 
 const ParticlesJS = () => (
   <div>
-    <Particles height={600} params={particlesConfig} style={particlesStyle} />
-    <svg
-      style={svgStyle}
+    <ParticlesGrad height={600} params={particlesConfig} />
+    <SvgWave
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 54 14"
-      height="80"
       width="100%"
       preserveAspectRatio="none"
     >
@@ -48,7 +47,7 @@ const ParticlesJS = () => (
           dur="20s"
         />
       </path>
-    </svg>
+    </SvgWave>
   </div>
 );
 

@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-04124cda87bb02bcee4b.js",
-      "component---src-pages-index-js-04124cda87bb02bcee4b.js.map"
+      "component---src-pages-index-js-06c509c5e801bc300c56.js",
+      "component---src-pages-index-js-06c509c5e801bc300c56.js.map"
     ],
     "path---bonker": [
       "path---bonker-fa08bd4dd318468b06bf.js",
@@ -21,8 +21,8 @@
       "component---src-templates-project-js-70d41cba67f318051985.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-1e428fcc62bcf2295981.js",
-      "component---src-layouts-index-js-1e428fcc62bcf2295981.js.map"
+      "component---src-layouts-index-js-a4bc5f2ccc863d96bf6c.js",
+      "component---src-layouts-index-js-a4bc5f2ccc863d96bf6c.js.map"
     ],
     "path---eco-driving": [
       "path---eco-driving-ce274aec4306bbf2ee34.js",
@@ -57,8 +57,8 @@
       "path---accessible-weather-380decfe406eb117f2d8.js.map"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-26b9b97deaaf147b84de.js",
-      "component---src-pages-about-js-26b9b97deaaf147b84de.js.map"
+      "component---src-pages-about-js-590ae31dc457910fa1af.js",
+      "component---src-pages-about-js-590ae31dc457910fa1af.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",

@@ -8,19 +8,14 @@ import * as palette from '../../config/Style';
 import confetti from '../../static/img/confetti.png';
 
 const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(${palette.GRID_COLUMNS}, 1fr);
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
-  
-  @media (min-width: 1000px) {
-    grid-gap: 100px;
-  }
 
   @media (max-width: 1000px) {
     margin-right: 1rem;
     margin-left: 1rem;
+    margin-top: -6rem;
   }
 
   .gatsby-image-outer-wrapper,
@@ -33,6 +28,7 @@ const Content = styled.div`
   @media (min-width: 1000px) {
     margin: -6rem auto 6rem auto;
   }
+  
   max-width: ${palette.MAX_WIDTH}px;
   padding: 0;
   position: relative;

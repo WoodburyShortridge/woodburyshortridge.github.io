@@ -12,6 +12,8 @@ const Content = styled.div`
   padding: 0;
   position: relative;
   background-image: url(${confetti});
+  margin-left: 1rem;
+  margin-right: 1rem;
 `;
 
 const Bio = styled.div`

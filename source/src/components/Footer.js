@@ -10,6 +10,8 @@ const Content = styled.div`
   p {
     display: inline-flex;
   }
+  margin-left: 1rem;
+  margin-right: 1rem;
 `;
 
 const Avatar = styled.div`

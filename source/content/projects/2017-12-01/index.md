@@ -45,6 +45,6 @@ We didn’t want the decision making process behind music choices to be hidden f
 We chose to build the app using React Native, a JavaScript library for building native apps that are supported by both iOS and Android. We leveraged Expo’s React Native developer tools to build, test (lots and lots of testing), and deploy prototype iterations. The AI is handled by Google’s Cloud Vision API where we ran three models: object, facial expression, and image properties, such as dominant color. We implemented the Iterative Dichotomiser 3(ID3) algorithm for the music picking decision tree. SoundCloud’s API is used to search and fetch tracks. The SONOS Control API allows BONKER to connect, stream songs, and control playback on great sounding speakers.
 
 <video controls>
-  <source src="https://woodburyshortridge.github.io/img/bonkervid.mov" type="video/mp4">
+  <source src="https://github.com/WoodburyShortridge/woodburyshortridge.github.io/blob/master/source/content/projects/2017-12-01/bonker-vid.mov?raw=true" type="video/mp4">
 Your browser does not support the video tag.
 </video>

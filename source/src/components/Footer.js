@@ -58,7 +58,7 @@ const Footer = () => (
     <p>
       Have a look at the&nbsp;
       <a
-        href="https://github.com/WoodburyShortridge/woodburyshortridge.github.io"
+        href="https://github.com/WoodburyShortridge/woodburyshortridge.github.io/tree/master/source"
         target="_blank"
         rel="noopener noreferrer"
       >

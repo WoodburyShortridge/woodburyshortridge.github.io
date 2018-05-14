@@ -30,12 +30,17 @@ const Back = styled(Link)`
 
   svg#back {
     transition: margin 0.4s ease;
+    @media (max-width: 1000px) {
+      margin-left: -1rem;
+    }
   }
 
-  &:hover {
-    svg#back {
-      margin-left: 0rem;
-      margin-right: 1rem;
+  @media (min-width: 1000px) {
+    &:hover {
+      svg#back {
+        margin-left: 0rem;
+        margin-right: 1rem;
+      }
     }
   }
 

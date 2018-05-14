@@ -24,12 +24,17 @@ const Prev = styled.div`
   }
   svg {
     transition: margin 0.4s ease;
+    @media (max-width: 1000px) {
+      margin-left: -1rem;
+    }
   }
 
-  &:hover {
-    svg {
-      margin-left: 1rem;
-      margin-right: 1rem;
+  @media (min-width: 1000px) {
+    &:hover {
+      svg {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
     }
   }
 `;
@@ -41,12 +46,17 @@ const Next = styled.div`
   }
   svg {
     transition: margin 0.4s ease;
+    @media (max-width: 1000px) {
+      margin-right: -1rem;
+    }
   }
 
-  &:hover {
-    svg {
-      margin-left: 1rem;
-      margin-right: 1rem;
+  @media (min-width: 1000px) {
+    &:hover {
+      svg {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
     }
   }
 `;

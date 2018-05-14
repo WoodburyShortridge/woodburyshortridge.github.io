@@ -10,13 +10,15 @@ import confetti from '../../static/img/confetti.png';
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(${palette.GRID_COLUMNS}, 1fr);
-  grid-gap: 100px;
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
+  
+  @media (min-width: 1000px) {
+    grid-gap: 100px;
+  }
 
   @media (max-width: 1000px) {
-    grid-template-columns: 1fr;
     margin-right: 1rem;
     margin-left: 1rem;
   }

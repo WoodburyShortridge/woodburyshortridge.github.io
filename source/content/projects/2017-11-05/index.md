@@ -7,7 +7,7 @@ links:
 areas:
     - CVS Telehealth app
     - interface design
-color: "#4A90E2"
+color: "#F44336"
 ---
 This telehealth design concept was developed as part of Tuft's computer interface design course. The design challenge for this project was to create an intuitive app lets users easily schedule and participate in virtual appointments with appropriate healthcare professionals, along with other health services such as prescription tracking. 
 

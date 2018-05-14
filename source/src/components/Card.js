@@ -10,9 +10,17 @@ import Slide from 'react-reveal/Slide';
 import config from '../../config/SiteConfig';
 import * as palette from '../../config/Style';
 
-const Container = styled.div``;
+const Container = styled.div`
+  @media (min-width: 1000px) {
+    margin-bottom: 15rem;
+  }
+
+`;
 const CardItem = styled.div`
   min-height: 500px;
+  @media (max-width: 1000px) {
+    min-height: 300px
+  }
   max-width: 650px;
   position: relative;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 15px 12px rgba(0, 0, 0, 0.1);

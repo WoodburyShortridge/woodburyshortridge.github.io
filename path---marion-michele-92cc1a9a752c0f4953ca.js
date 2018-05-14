@@ -1,0 +1,2 @@
+webpackJsonp([0xd0273cac0fbe],{425:function(e,t){e.exports={data:{markdownRemark:null},pathContext:{slug:"/marion-michele",prev:{fields:{slug:"/bonker"},frontmatter:{title:"Bonker"}},next:!1}}}});
+//# sourceMappingURL=path---marion-michele-92cc1a9a752c0f4953ca.js.map

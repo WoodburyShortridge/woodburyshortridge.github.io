@@ -1,0 +1,2 @@
+webpackJsonp([21001042848024],{429:function(t,n){t.exports={data:{markdownRemark:null},pathContext:{slug:"/roman-kraft",prev:{fields:{slug:"/matt-cannon"},frontmatter:{title:"Matt Cannon"}},next:!1}}}});
+//# sourceMappingURL=path---roman-kraft-c44eac3d929203f227eb.js.map

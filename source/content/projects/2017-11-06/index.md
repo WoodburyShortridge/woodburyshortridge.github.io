@@ -4,7 +4,7 @@ date: "2017-11-06"
 title: "Sonified Pong"
 links:
     - https://github.com/WoodburyShortridge/sonifiedpong
-    - https://woodburyshortridge.github.io/sonifiedpong
+    - http://sonifiedpong.s3-website-us-east-1.amazonaws.com
 
 areas:
     - Accessible gaming with p5.js

@@ -102,7 +102,7 @@ class About extends Component {
             <p>
               Thanks for checking out my projects, and please contact me for any inquiries or further information. And,
               if you're feeling bold, try playing{' '}
-              <a rel="noopener noreferrer" target="_blank" href="https://woodburyshortridge.github.io/sonified-pong/">
+              <a rel="noopener noreferrer" href="http://sonifiedpong.s3-website-us-east-1.amazonaws.com">
                 sonified pong
               </a>{' '}
               with your eyes closed!{' '}

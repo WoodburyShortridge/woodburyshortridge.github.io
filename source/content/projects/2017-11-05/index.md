@@ -3,7 +3,7 @@ cover: "./cover.jpg"
 date: "2017-11-05"
 title: "eClinic"
 links:
-    - https://woodburyshortridge.github.io/eclinic
+    - http://eclinicinvision.s3-website-us-east-1.amazonaws.com
 areas:
     - CVS Telehealth app
     - interface design
@@ -28,7 +28,7 @@ connecting with the best fit specialist.
 ## Prototype
 
 The final stage of this design challenge was to create a tap-able prototype for usability testing.
-I designed these screens in Sketch and inVision. For the <a rel="noopener noreferrer" target="_blank" href="https://woodburyshortridge.github.io/eclinic">prototype</a>, I found I could take the React.js source from inVision and 
+I designed these screens in Sketch and inVision. For the [prototype](http://eclinicinvision.s3-website-us-east-1.amazonaws.com), I found I could take the React.js source from inVision and 
 extended the functionality such as playing videos in the call screen and accessing the webcam.
 
 ![](./ui_screens.png)

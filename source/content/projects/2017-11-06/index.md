@@ -3,8 +3,8 @@ cover: "./pong.png"
 date: "2017-11-06"
 title: "Sonified Pong"
 links:
-    - https://github.com/WoodburyShortridge/sonified-pong
-    - https://woodburyshortridge.github.io/sonified-pong
+    - https://github.com/WoodburyShortridge/sonifiedpong
+    - https://woodburyshortridge.github.io/sonifiedpong
 
 areas:
     - Accessible gaming with p5.js

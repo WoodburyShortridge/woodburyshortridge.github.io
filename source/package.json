@@ -31,7 +31,6 @@
     "npm": "^5.8.0",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
-    "react-modal": "^3.4.4",
     "react-overdrive": "^0.0.9",
     "react-particles-js": "^2.1.2",
     "react-reveal": "^1.2.1",
@@ -67,7 +66,8 @@
   "scripts": {
     "dev": "gatsby develop -o",
     "deploy": "rm -r .cache && gatsby build --prefix-paths && gh-pages -d public",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "postbuild": "mv -f public/* ~/GitHub/woodburyshortridge.github.io"
   },
   "browserslist": [
     "> 1%",

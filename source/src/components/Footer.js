@@ -29,6 +29,10 @@ const Avatar = styled.div`
   }
 `;
 
+const IconGroup = styled.div`
+  display: inline-flex;
+`;
+
 const Footer = () => (
   <Content>
     <p>Made with </p>
@@ -36,6 +40,7 @@ const Footer = () => (
       <img src={config.heart} alt="heart" />
     </Avatar>
     <p> by Woodbury with </p>
+    <IconGroup>
     <a href="https://github.com/gatsbyjs/gatsby">
       <Avatar>
         <img src={config.gatsby} alt="gatsby" />
@@ -56,6 +61,7 @@ const Footer = () => (
         <img src={config.confetti} alt="Sketch confetti" />
       </Avatar>
     </a>
+    </IconGroup>
     <br />
     <p>
       Have a look at the&nbsp;

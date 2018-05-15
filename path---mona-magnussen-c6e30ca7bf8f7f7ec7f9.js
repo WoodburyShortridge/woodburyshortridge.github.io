@@ -1,2 +1,0 @@
-webpackJsonp([0xb1fc8f62be77],{427:function(t,a){t.exports={data:{markdownRemark:null},pathContext:{slug:"/mona-magnussen",prev:{fields:{slug:"/roman-kraft"},frontmatter:{title:"Roman Kraft"}},next:!1}}}});
-//# sourceMappingURL=path---mona-magnussen-c6e30ca7bf8f7f7ec7f9.js.map

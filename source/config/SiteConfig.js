@@ -9,7 +9,7 @@ module.exports = {
   siteLanguage: 'en',
   siteLogo: '/logos/logo-1024.png',
   siteDescription: 'Woodbury Shortridge fun portfolio for research, design, prototype, development, engineering etc.',
-  googleAnalyticsID: 'UA-12345689-1',
+  googleAnalyticsID: 'UA-98369685-1',
 
   // Date format
   dateFormat: 'DD.MM.YYYY',

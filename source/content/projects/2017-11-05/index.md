@@ -28,7 +28,7 @@ connecting with the best fit specialist.
 ## Prototype
 
 The final stage of this design challenge was to create a tap-able prototype for usability testing.
-I designed these screens in Sketch and inVision. For the [prototype](https://woodburyshortridge.github.io/eclinic), I found I could take the React.js source from inVision and 
+I designed these screens in Sketch and inVision. For the <a rel="noopener noreferrer" target="_blank" href="https://woodburyshortridge.github.io/eclinic">prototype</a>, I found I could take the React.js source from inVision and 
 extended the functionality such as playing videos in the call screen and accessing the webcam.
 
 ![](./ui_screens.png)

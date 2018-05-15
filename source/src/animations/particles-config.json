@@ -1,10 +1,10 @@
 {
   "particles": {
     "number": {
-      "value": 168,
+      "value": 50,
       "density": {
         "enable": true,
-        "value_area": 1200
+        "value_area": 500
       }
     },
     "color": {
@@ -20,17 +20,17 @@
         "nb_sides": 3
       },
       "image": {
-        "src": "img/github.svg",
+        "src": "",
         "width": 100,
         "height": 100
       }
     },
     "opacity": {
-      "value": 0.03206824121731046,
+      "value": 0.04,
       "random": false,
       "anim": {
         "enable": false,
-        "speed": 7.633525795632644,
+        "speed": 7,
         "opacity_min": 1,
         "sync": false
       }
@@ -47,10 +47,10 @@
     },
     "line_linked": {
       "enable": true,
-      "distance": 144.30708547789706,
+      "distance": 145,
       "color": "#ffffff",
-      "opacity": 0.2886141709557941,
-      "width": 1.2827296486924182
+      "opacity": 0.35,
+      "width": 1.4
     },
     "move": {
       "enable": true,
@@ -62,7 +62,7 @@
       "bounce": false,
       "attract": {
         "enable": true,
-        "rotateX": 4649.894976510016,
+        "rotateX": 4600,
         "rotateY": 1200
       }
     }

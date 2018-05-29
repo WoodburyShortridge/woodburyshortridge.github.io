@@ -78,10 +78,16 @@ const Details = styled.div`
   h1 {
     color: ${palette.COLOR};
     font-size: 3rem;
+    @media (max-width: 1000px) {
+      font-size: 2.25rem;
+    }
   }
 
   span {
     font-size: 1.75rem;
+    @media (max-width: 1000px) {
+      font-size: 1.5rem;
+    }
     &:not(:last-child) {
       margin-right: 0.25rem;
       &:after {

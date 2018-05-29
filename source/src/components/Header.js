@@ -38,6 +38,9 @@ const Name = styled.h1`
   margin: 1rem 0 0.25rem 0;
   color: ${palette.COLOR};
   font-size: 3rem;
+  @media (max-width: 1000px) {
+      font-size: 2.5rem;
+    }
 `;
 
 const Blurb = styled.p`
@@ -46,7 +49,10 @@ const Blurb = styled.p`
     color: ${palette.COLOR};
   }
   margin-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  @media (max-width: 1000px) {
+      font-size: 1rem;
+    }
 `;
 const AboutLink = styled(Link)`
   margin-left: 5px;

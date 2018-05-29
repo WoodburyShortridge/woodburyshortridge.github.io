@@ -31,6 +31,7 @@ const Avatar = styled.div`
 
 const IconGroup = styled.div`
   display: inline-flex;
+  margin-bottom: 1rem;
 `;
 
 const Footer = () => (
@@ -41,22 +42,22 @@ const Footer = () => (
     </Avatar>
     <p> by Woodbury with </p>
     <IconGroup>
-    <a href="https://github.com/gatsbyjs/gatsby">
+    <a href="https://github.com/gatsbyjs/gatsby" target="_blank">
       <Avatar>
         <img src={config.gatsby} alt="gatsby" />
       </Avatar>
     </a>
-    <a href="https://github.com/facebook/react">
+    <a href="https://github.com/facebook/react" target="_blank">
       <Avatar>
         <img src={config.react} alt="react" />
       </Avatar>
     </a>
-    <a href="https://github.com/styled-components/styled-components">
+    <a href="https://github.com/styled-components/styled-components" target="_blank">
       <Avatar>
         <img src={config.styled} alt="styled components" />
       </Avatar>
     </a>
-    <a href="http://www.sketchconfetti.com">
+    <a href="http://www.sketchconfetti.com" target="_blank">
       <Avatar>
         <img src={config.confetti} alt="Sketch confetti" />
       </Avatar>

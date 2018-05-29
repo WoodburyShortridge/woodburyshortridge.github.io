@@ -26,16 +26,22 @@ const Content = styled.div`
   h2 {
     font-size: 2.5rem;
     color: #333;
+    @media (max-width: 1000px) {
+      font-size: 2rem;
+    }
   }
   h3 {
     font-size: 2rem;
     color: #333;
+    @media (max-width: 1000px) {
+      font-size: 1.75rem;
+    }
   }
   h4 {
     margin-bottom: 0rem;
   }
   li {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
   video {
     display: flex;

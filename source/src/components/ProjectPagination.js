@@ -14,6 +14,9 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     font-size: 1.25rem;
+    @media (max-width: 1000px) {
+      font-size: 1rem;
+    }
   }
   justify-items: center;
 `;

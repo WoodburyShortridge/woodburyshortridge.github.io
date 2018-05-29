@@ -77,6 +77,9 @@ const Details = styled.div`
   h1 {
     color: ${palette.COLOR};
     font-size: 3rem;
+    @media (max-width: 1000px) {
+      font-size: 2.5rem;
+    }
   }
 
   span {

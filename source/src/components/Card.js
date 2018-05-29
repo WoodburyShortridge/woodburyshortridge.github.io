@@ -103,6 +103,9 @@ const Content = styled.div`
 
 const Areas = styled.span`
   font-size: 1.5rem;
+  @media (max-width: 1000px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const AreaItem = styled.span`
@@ -119,6 +122,9 @@ const Name = styled.h2`
   margin-bottom: 1rem;
   font-size: 3rem;
   color: #333;
+  @media (max-width: 1000px) {
+    font-size: 2.2rem;
+  }
 `;
 
 const Arrow = styled(MdArrowForward)`

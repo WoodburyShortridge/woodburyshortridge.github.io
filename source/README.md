@@ -4,8 +4,6 @@
 
 whshortridge@gmail.com
 
-678 925 7344
-
 ## Education
 ### Georgia Institute of Technology
 *B.S. Psychology, with honor* | May 2016
@@ -13,12 +11,12 @@ whshortridge@gmail.com
 *Human-Computer Interaction, Certificate* | September 2017 - Present
 
 ## Work Experience
-### Coordinator of Inclusive Technology
+### Lead Human-computer Interaction Engineer
 *Institute for Human Centered Design, Boston, MA* | September 2016 – Present
 
 Manage a broad range of consulting and educational projects with a mission to develop accessible and inclusive interfaces. Responsibilities include contextual inquiry research with an emphasis on multisensory experience, wireframing/prototyping, front-end development, and user-centered design. Selected projects:
 
-* Museum of the Bible, Washington, DC | Multi-touch interactives and Android multimodal interface design
+* Smithsonian Institution, Washington, DC | Multi-touch interactives and Android interface design
 * National Endowment for the Arts | User-centered web app development
 * ADA National Network | Web accessibility prototyping, user-testing, and development
 * Massachusetts Bay Transportation Authority | UI design and engineering for transit app
@@ -36,11 +34,11 @@ Worked with multiple interdisciplinary research teams researching and developing
 Various freelance web developments, including a scholarly web-based collaboration between Emory College of Arts and Sciences & Emory University School of Medicine
 
 ## Certifications
-*MITx* | Introduction to Computer Science and Programming Using Python
+*MITx* | Computer Science and Programming Using Python
 
 ## Areas of Expertise
 * Accessibility (WCAG 2.0 and section 508)
-* Audio & visual Design (Ableton, Adobe suite, Axure,  Sketch)
+* Audio & visual design (Ableton, Adobe suite, inVision,  Sketch)
 * Cognitive psychology
 * Human-computer interaction
 * Human Factors

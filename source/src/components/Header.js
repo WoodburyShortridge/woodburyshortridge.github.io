@@ -93,9 +93,9 @@ const Header = ({ avatar, name, socialMedia }) => (
         <SocialMedia>
           {socialMedia.map(social => (
             <a key={social.name} href={social.url} rel="noopener noreferrer" target="_blank">
-              {social.name === 'Linkedin' && <FaLinkedinSquare alt={social.name} />}
-              {social.name === 'GitHub' && <FaGithubSquare alt={social.name} />}
-              {social.name === 'Gmail' && <FaEnvelopeSquare alt={social.name} />}
+              {social.name === 'Linkedin' && <FaLinkedinSquare aria-label={social.name} />}
+              {social.name === 'GitHub' && <FaGithubSquare aria-label={social.name} />}
+              {social.name === 'Gmail' && <FaEnvelopeSquare aria-label={social.name} />}
             </a>
           ))}
         </SocialMedia>

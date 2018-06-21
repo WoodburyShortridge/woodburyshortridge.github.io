@@ -67,7 +67,7 @@
     "dev": "gatsby develop -o",
     "deploy": "rm -r .cache && gatsby build --prefix-paths && gh-pages -d public",
     "build": "gatsby build",
-    "postbuild": "mv -f public/* ~/GitHub/woodburyshortridge.github.io"
+    "postbuild": "cp -r public/* ~/GitHub/woodburyshortridge.github.io"
   },
   "browserslist": [
     "> 1%",

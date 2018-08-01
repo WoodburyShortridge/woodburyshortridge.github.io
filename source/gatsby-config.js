@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: config.siteUrl + pathPrefix,
   },
   plugins: [
+    `gatsby-plugin-react-next`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {

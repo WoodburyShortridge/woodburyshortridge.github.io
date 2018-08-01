@@ -18,6 +18,7 @@
     "gatsby-plugin-nprogress": "^1.0.10",
     "gatsby-plugin-offline": "^1.0.12",
     "gatsby-plugin-react-helmet": "^2.0.3",
+    "gatsby-plugin-react-next": "^1.0.11",
     "gatsby-plugin-sharp": "^1.6.25",
     "gatsby-plugin-sitemap": "^1.2.10",
     "gatsby-plugin-styled-components": "^2.0.4",
@@ -65,8 +66,8 @@
   },
   "scripts": {
     "dev": "gatsby develop -o",
-    "deploy": "rm -r .cache && gatsby build --prefix-paths && gh-pages -d public",
-    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "build": "rm -r .cache && gatsby build",
     "postbuild": "cp -r public/* ~/GitHub/woodburyshortridge.github.io"
   },
   "browserslist": [

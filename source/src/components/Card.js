@@ -11,8 +11,12 @@ import config from '../../config/SiteConfig';
 import * as palette from '../../config/Style';
 
 const Container = styled.div`
+  margin-bottom: 8rem;
   @media (min-width: 1000px) {
-    margin-bottom: 15rem;
+    margin-bottom: ${props =>
+      props.i % 2 === 0 ? '15rem' :
+        '25rem'
+    }
   }
 
 `;
@@ -20,6 +24,12 @@ const CardItem = styled.div`
   min-height: 500px;
   @media (max-width: 1000px) {
     min-height: 300px
+  }
+  @media (min-width: 1000px) {
+    margin-left: ${props =>
+      props.i % 2 === 0 ? '0' :
+      'auto'
+    }
   }
   max-width: 650px;
   position: relative;
@@ -54,10 +64,6 @@ const Cover = styled.div`
   }
 `;
 
-const DateWrapper = styled.div`
-  font-size: 1rem;
-`;
-
 const Data = styled.div`
   max-width: 650px;
   z-index: 10;
@@ -67,10 +73,19 @@ const Data = styled.div`
   margin-left: auto;
   margin-right: auto;
   @media (min-width: 1000px) {
-    margin-right: 0;
-    margin-top: -15rem;
+    margin-top: ${props =>
+      props.i % 2 === 0 ? '-15rem' :
+      '-15rem'
+    }
+    margin-right: ${props =>
+      props.i % 2 === 0 ? '0' :
+      'auto'
+    }
+    margin-left: ${props =>
+      props.i % 2 === 0 ? 'auto' :
+      '0'
+    }
   }
-  margin-bottom: 10rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 15px 12px rgba(0, 0, 0, 0.1);
   transition: background 0.4s ease;
   h2,
@@ -134,22 +149,17 @@ const Arrow = styled(MdArrowForward)`
   margin-left: 1rem;
 `;
 
-const Date = ({ date }) => {
-  const formatted = format(date, config.dateFormat);
-  return <span>{formatted}</span>;
-};
-
-const Card = ({ path, cover, date, areas, title, slug, color }) => (
-  <Container>
+const Card = ({ path, cover, date, areas, title, slug, color, i }) => (
+  <Container i={i}>
     <Overdrive id={`${slug}-cover`}>
-      <CardItem>
+      <CardItem i={i}>
         <Cover>
           <Img sizes={cover} />
         </Cover>
       </CardItem>
     </Overdrive>
     <Slide bottom duration={500}>
-      <Data color={color}>
+      <Data i={i} color={color}>
         <Link to={path}>
           <Content>
             <Name>{title}</Name>

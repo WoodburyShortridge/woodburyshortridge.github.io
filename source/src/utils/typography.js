@@ -3,7 +3,7 @@ import Typography from 'typography';
 const config = require('../../config/SiteConfig');
 
 const typography = new Typography({
-  title: 'Emilia',
+  title: 'woody',
   baseFontSize: config.baseFontSize,
   baseLineHeight: 1.5,
   headerFontFamily: [config.headerFontFamily, 'sans-serif'],

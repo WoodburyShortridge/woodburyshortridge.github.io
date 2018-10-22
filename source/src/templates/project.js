@@ -4,10 +4,10 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import format from 'date-fns/format';
 import Img from 'gatsby-image';
-import Overdrive from 'react-overdrive';
 import styled from 'styled-components';
 
 import SEO from '../components/SEO';
+import Lightbox from '../components/Lightbox';
 import ProjectHeader from '../components/ProjectHeader';
 import ProjectPagination from '../components/ProjectPagination';
 import config from '../../config/SiteConfig';
@@ -19,12 +19,14 @@ const Content = styled.div`
   margin: 0 auto;
   color: ${palette.SECONDARY_COLOR};
   background: white;
-  margin-top: 1rem;
+  margin-top: 4rem;
   p {
     font-size: 1.25rem;
+    margin-top: 1rem;
   }
   h2 {
     font-size: 2.5rem;
+    margin-top: 3rem;
     color: #333;
     @media (max-width: 1000px) {
       font-size: 2rem;
@@ -32,13 +34,15 @@ const Content = styled.div`
   }
   h3 {
     font-size: 2rem;
+    margin-top: 2rem;
     color: #333;
     @media (max-width: 1000px) {
       font-size: 1.75rem;
     }
   }
   h4 {
-    margin-bottom: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   li {
     font-size: 1.25rem;
@@ -47,6 +51,36 @@ const Content = styled.div`
     display: flex;
     margin: auto;
   }
+  
+  .videoWrapper {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05), 0 15px 12px rgba(0,0,0,0.05);
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
+    margin: 3rem 0;
+   }
+   
+  video {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05), 0 15px 12px rgba(0,0,0,0.05);
+    max-width: 800px !important;
+    margin: 3rem auto;
+  }
+  .gatsby-resp-image-wrapper {
+    // box-shadow: 0 20px 40px rgba(0,0,0,0.05), 0 15px 12px rgba(0,0,0,0.05);
+    margin: 3rem 0;
+  }
+`;
+
+const MainImg = styled(Img)`
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05), 0 15px 12px rgba(0,0,0,0.05);
 `;
 
 const Project = props => {
@@ -82,9 +116,7 @@ const Project = props => {
             margin: '0 auto',
           }}
         >
-          <Overdrive id={`${slug}-cover`}>
-            <Img sizes={project.cover.childImageSharp.sizes} />
-          </Overdrive>
+        <Lightbox image={project.cover.childImageSharp.sizes} slug={slug}/>
         </div>
         <Content dangerouslySetInnerHTML={{ __html: postNode.html }} />
         <ProjectPagination next={next} prev={prev} />

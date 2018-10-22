@@ -43,7 +43,7 @@ const Index = props => {
       <Header avatar={config.avatar} name={config.name} email={config.email} socialMedia={config.socialMedia} />
       <Content>
         <Grid>
-          {projectEdges.map(project => (
+          {projectEdges.map((project, i) => (
             <Card
               date={project.node.frontmatter.date}
               title={project.node.frontmatter.title}
@@ -53,6 +53,7 @@ const Index = props => {
               color={project.node.frontmatter.color}
               slug={project.node.fields.slug}
               key={project.node.fields.slug}
+              i={i}
             />
           ))}
         </Grid>

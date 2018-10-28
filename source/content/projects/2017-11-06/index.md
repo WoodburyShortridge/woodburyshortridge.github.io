@@ -1,5 +1,7 @@
 ---
 cover: "./pong.png"
+coverBlur: "./pong.png"
+coverAlt: "The pong game user interface"
 date: "2017-11-06"
 title: "Sonified Pong"
 links:
@@ -9,6 +11,7 @@ links:
 areas:
     - Accessible gaming with p5.js
 color: "#f06292"
+protected: false
 ---
 
 I built this new sonified take on pong to make this classic game accessible for the blind. The app is made with the p5.js libraries, the javaScrip version of processing.

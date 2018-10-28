@@ -10,7 +10,6 @@ class Lightbox extends Component {
 
   handleClick = (e) => {
     e.preventDefault();
-    console.log('clicked');
     this.setState({ showLightbox: !this.state.showLightbox })
   };
 
@@ -36,13 +35,13 @@ class Lightbox extends Component {
   };
 
   render() {
-    const { image, slug } = this.props;
+    const { image, slug, coverAlt } = this.props;
     const { showLightbox } = this.state;
     return (
       <Fragment>
         <Zoom href={image.src} visible={showLightbox}  onClick={e => this.handleClick(e)}>
           <Overdrive id={`${slug}-cover`}>
-            <Img sizes={image} />
+            <MainImg sizes={image} alt={coverAlt} />
           </Overdrive>
         </Zoom>
         { showLightbox? this.renderModal() : ''}
@@ -88,6 +87,10 @@ const Overlay = styled.div`
     opacity: 1;
     transition: opacity 300ms ease 0s;
     background: white;
+`;
+
+const MainImg = styled(Img)`
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05), 0 15px 12px rgba(0,0,0,0.05);
 `;
 
 export default Lightbox

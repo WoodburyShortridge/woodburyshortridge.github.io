@@ -48,6 +48,7 @@ const Index = props => {
               date={project.node.frontmatter.date}
               title={project.node.frontmatter.title}
               cover={project.node.frontmatter.cover.childImageSharp.sizes}
+              coverAlt={project.node.frontmatter.coverAlt}
               path={project.node.fields.slug}
               areas={project.node.frontmatter.areas}
               color={project.node.frontmatter.color}
@@ -76,11 +77,25 @@ export const pageQuery = graphql`
           frontmatter {
             cover {
               childImageSharp {
-                sizes(maxWidth: 850, quality: 90, traceSVG: { color: "#328bff" }) {
+                sizes(maxWidth: 1600, quality: 90, traceSVG: { color: "#328bff" }) {
                   ...GatsbyImageSharpSizes_withWebp_tracedSVG
+                }
+                resize(width: 800) {
+                  src
                 }
               }
             }
+            coverBlur {
+              childImageSharp {
+                sizes(maxWidth: 1600, quality: 90, traceSVG: { color: "#328bff" }) {
+                  ...GatsbyImageSharpSizes_withWebp_tracedSVG
+                }
+                resize(width: 800) {
+                  src
+                }
+              }
+            }
+            coverAlt
             date
             title
             areas

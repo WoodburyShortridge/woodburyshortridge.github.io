@@ -1,5 +1,7 @@
 ---
 cover: "./cover.jpg"
+coverBlur: "./cover.jpg"
+coverAlt: "telehealth app prototype"
 date: "2017-11-05"
 title: "eClinic"
 links:
@@ -8,6 +10,7 @@ areas:
     - CVS Telehealth app
     - interface design
 color: "#F44336"
+protected: false
 ---
 This telehealth design concept was developed as part of Tuft's computer interface design course. The design challenge for this project was to create an intuitive app lets users easily schedule and participate in virtual appointments with appropriate healthcare professionals, along with other health services such as prescription tracking. 
 

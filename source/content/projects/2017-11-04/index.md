@@ -1,5 +1,7 @@
 ---
 cover: "./eco.png"
+coverBlur: "./eco.png"
+coverAlt: "Diving simulator"
 date: "2017-11-04"
 title: "Eco driving"
 links:
@@ -8,6 +10,7 @@ links:
 areas:
     - Auditory and head-up in-vehicle interfaces
 color: "#06AE4C"
+protected: false
 ---
 
 This project is the design of auditory and head-up in-vehicle interfaces to allow safer completion of a secondary task: eco-driving. Eco-driving displays are meant to shape driving behavior in a fuel-efficient manner. Current research shows that visual eco-driving interfaces can reduce fuel consumption, but hinder safe driving performance due to attention decrement and workload overflow. The design decision for a head-up and auditory display was aimed to increase fuel-efficient driving behavior while maintaining driving performance. The design of both displays was driven by data from a prior participatory design card sorting study. The study, in conjunction with these designs, lead to my senior thesis (May 2016) and a conference paper for [International Conference for Auditory Display 2017](https://smartech.gatech.edu/handle/1853/58360).

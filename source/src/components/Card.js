@@ -1,6 +1,5 @@
 import React from 'react';
 import { MdArrowForward } from 'react-icons/lib/md';
-import format from 'date-fns/format';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 import Link from 'gatsby-link';
@@ -14,8 +13,8 @@ const Container = styled.div`
   margin-bottom: 8rem;
   @media (min-width: 1000px) {
     margin-bottom: ${props =>
-      props.i % 2 === 0 ? '15rem' :
-        '25rem'
+      props.i % 2 === 0 ? '20rem' :
+        '20rem'
     }
   }
 
@@ -149,12 +148,12 @@ const Arrow = styled(MdArrowForward)`
   margin-left: 1rem;
 `;
 
-const Card = ({ path, cover, date, areas, title, slug, color, i }) => (
+const Card = ({ path, cover, coverAlt, date, areas, title, slug, color, i }) => (
   <Container i={i}>
     <Overdrive id={`${slug}-cover`}>
       <CardItem i={i}>
         <Cover>
-          <Img sizes={cover} />
+          <Img sizes={cover} alt={coverAlt} />
         </Cover>
       </CardItem>
     </Overdrive>

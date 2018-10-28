@@ -27,6 +27,8 @@ const Back = styled(Link)`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  position: absolute;
+  z-index: 1;
 
   svg#back {
     transition: margin 0.4s ease;
@@ -120,13 +122,6 @@ const ArrowBack = styled(MdKeyboardArrowLeft)`
   color: #fff;
   margin-left: 1rem;
   margin-right: 0rem;
-`;
-
-const DateWrapper = styled.div`
-  margin-top: -1rem;
-  span {
-    font-size: 1rem;
-  }
 `;
 
 const Date = ({ date }) => {

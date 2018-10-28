@@ -1,6 +1,6 @@
 /* eslint react/no-danger: off */
 
-import React from 'react';
+import React, { Component } from "react";
 import Helmet from 'react-helmet';
 import format from 'date-fns/format';
 import Img from 'gatsby-image';
@@ -13,6 +13,7 @@ import ProjectPagination from '../components/ProjectPagination';
 import config from '../../config/SiteConfig';
 import * as palette from '../../config/Style';
 import confetti from '../../static/img/confetti.png';
+import Login from '../components/Login';
 
 const Content = styled.div`
   max-width: ${palette.MAX_WIDTH_PROJECT_DETAIL}px;
@@ -79,51 +80,72 @@ const Content = styled.div`
   }
 `;
 
-const MainImg = styled(Img)`
-  box-shadow: 0 20px 40px rgba(0,0,0,0.05), 0 15px 12px rgba(0,0,0,0.05);
-`;
+class Project extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loggedIn: false
+    };
+    this.signInHandler = this.signInHandler.bind(this)
+  }
 
-const Project = props => {
-  const { slug, next, prev } = props.pathContext;
-  const postNode = props.data.markdownRemark;
-  const project = postNode.frontmatter;
-  const date = format(project.date, config.dateFormat);
+  signInHandler() {
+    this.setState({
+      loggedIn: true
+    })
+  }
 
-  return (
-    <div>
-      <Helmet title={`${project.title} | ${config.siteTitle}`} />
-      <SEO postPath={slug} postNode={postNode} postSEO />
-      <ProjectHeader
-        avatar={config.avatar}
-        name={config.name}
-        date={date}
-        title={project.title}
-        links={project.links}
-        areas={project.areas}
-        slug={slug}
-      />
-      <div
-        style={{
-          backgroundImage: `url(${confetti})`,
-          padding: `0 ${palette.CONTENT_PADDING}`,
-          margin: '-10rem auto 6rem auto',
-        }}
-      >
+  renderMainImage() {
+    const { slug } = this.props.pathContext;
+    const postNode = this.props.data.markdownRemark;
+    const project = postNode.frontmatter;
+    if (project.protected && !this.state.loggedIn) {
+      return <Lightbox coverAlt={project.coverAlt} image={project.cover.childImageSharp.sizes} slug={slug}/>
+    }
+    else return <Lightbox coverAlt={project.coverAlt} image={project.coverBlur.childImageSharp.sizes} slug={slug}/>
+  }
+  render() {
+    const { slug, next, prev } = this.props.pathContext;
+    const postNode = this.props.data.markdownRemark;
+    const project = postNode.frontmatter;
+    const date = format(project.date, config.dateFormat);
+
+    return (
+      <div>
+        <Helmet title={`${project.title} | ${config.siteTitle}`} />
+        <SEO postPath={slug} postNode={postNode} postSEO />
+        <ProjectHeader
+          avatar={config.avatar}
+          name={config.name}
+          date={date}
+          title={project.title}
+          links={project.links}
+          areas={project.areas}
+          slug={slug}
+        />
         <div
           style={{
-            position: 'relative',
-            maxWidth: palette.MAX_WIDTH_PROJECT_DETAIL,
-            margin: '0 auto',
+            backgroundImage: `url(${confetti})`,
+            padding: `0 ${palette.CONTENT_PADDING}`,
+            margin: '-10rem auto 6rem auto',
           }}
         >
-        <Lightbox image={project.cover.childImageSharp.sizes} slug={slug}/>
+          <div
+            style={{
+              position: 'relative',
+              maxWidth: palette.MAX_WIDTH_PROJECT_DETAIL,
+              margin: '0 auto',
+            }}
+          >
+            { this.renderMainImage() }
+          </div>
+          { project.protected ? <Login title={project.title} onSignIn={this.signInHandler} /> : <Content dangerouslySetInnerHTML={{ __html: postNode.html }} /> }
+          <ProjectPagination next={next} prev={prev} />
         </div>
-        <Content dangerouslySetInnerHTML={{ __html: postNode.html }} />
-        <ProjectPagination next={next} prev={prev} />
       </div>
-    </div>
-  );
-};
+    )
+  }
+}
 
 export default Project;
 
@@ -143,10 +165,22 @@ export const pageQuery = graphql`
             }
           }
         }
+        coverBlur {
+          childImageSharp {
+            sizes(maxWidth: 1600, quality: 90, traceSVG: { color: "#328bff" }) {
+              ...GatsbyImageSharpSizes_withWebp_tracedSVG
+            }
+            resize(width: 800) {
+              src
+            }
+          }
+        }
+        coverAlt
         date
         title
         links
         areas
+        protected
       }
     }
   }

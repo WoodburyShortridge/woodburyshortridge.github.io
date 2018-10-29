@@ -141,7 +141,8 @@ const Content = styled.div`
   }
 `;
 
-const API = 'http://ec2-54-173-66-215.compute-1.amazonaws.com/api/v1/';
+const API = 'https://api.d4isy.com/api/v1/';
+// const API = 'http://ec2-54-173-66-215.compute-1.amazonaws.com/api/v1/';
 // const API = 'http://localhost:3000/api/v1/';
 
 export default class Login extends Component {
@@ -168,7 +169,6 @@ export default class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-
     fetch(API + this.state.password + '/' + this.props.title.replace(/\s+/g, '-').toLowerCase())
       .then( response => {
         if (!response.ok) {

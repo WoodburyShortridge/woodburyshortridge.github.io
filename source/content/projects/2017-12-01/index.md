@@ -1,6 +1,6 @@
 ---
 cover: "./bonker.png"
-coverBlur: "./conjureBlur.png"
+coverBlur: "./bonker.png"
 coverAlt: "The sonos app loading screen"
 date: "2017-12-01"
 title: "Bonker"
@@ -10,7 +10,7 @@ areas:
     - Sonos design challenge
     - first place
 color: "#4A90E2"
-protected: true
+protected: false
 ---
 This project is the winner of the SONOS / Tufts University design challenge. My partner, Ali Decker, and I designed and developed a native app that uses computer vision and machine learning to instantly curate a playlist from photos you snap.
 

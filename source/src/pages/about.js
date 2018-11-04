@@ -4,7 +4,7 @@ import AboutHeader from '../components/AboutHeader';
 
 import config from '../../config/SiteConfig';
 import * as palette from '../../config/Style';
-import confetti from '../../static/img/confetti.png';
+import confetti from '../../static/img/confetti_bw.png';
 import me from '../../static/img/me.png';
 
 const Content = styled.div`

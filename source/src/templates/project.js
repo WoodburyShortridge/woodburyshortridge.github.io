@@ -12,7 +12,7 @@ import ProjectHeader from '../components/ProjectHeader';
 import ProjectPagination from '../components/ProjectPagination';
 import config from '../../config/SiteConfig';
 import * as palette from '../../config/Style';
-import confetti from '../../static/img/confetti.png';
+import confetti from '../../static/img/confetti_bw.png';
 import Login from '../components/Login';
 
 const Content = styled.div`
@@ -42,6 +42,7 @@ const Content = styled.div`
     }
   }
   h4 {
+    font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }

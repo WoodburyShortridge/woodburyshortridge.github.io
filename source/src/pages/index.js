@@ -5,7 +5,7 @@ import Card from '../components/Card';
 import Header from '../components/Header';
 import config from '../../config/SiteConfig';
 import * as palette from '../../config/Style';
-import confetti from '../../static/img/confetti.png';
+import confetti from '../../static/img/confetti_bw.png';
 
 const Grid = styled.div`
   max-width: 1000px;

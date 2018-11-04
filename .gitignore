@@ -7,3 +7,9 @@ public/
 .idea/
 yarn.lock
 yarn-error.log
+
+
+source/content/projects/2017-12-02/*
+!source/content/projects/2017-12-02/index.md
+!source/content/projects/2017-12-02/conjure.png
+!source/content/projects/2017-12-02/conjureBlur.png

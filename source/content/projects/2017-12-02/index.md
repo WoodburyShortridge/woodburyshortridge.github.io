@@ -1,7 +1,7 @@
 ---
 cover: "./conjureBlur.png"
 coverBlur: "./conjure.png"
-coverAlt: "The sonos app loading screen"
+coverAlt: "Person feeling a tangible face"
 date: "2017-12-02"
 title: "CONJURE"
 links:
@@ -11,4 +11,3 @@ areas:
 color: "#4A90E2"
 protected: true
 ---
-

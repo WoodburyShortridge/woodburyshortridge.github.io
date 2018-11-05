@@ -52,4 +52,4 @@ I build the app using React Native, a JavaScript library for building native app
 Your browser does not support the video tag.
 </video>
 
-The SONOS control API is not public yet, therefore the source code is private. If you have questions or would like to contribute, please feel free to [contact me](mailto:whshortridge@gmail.com).
+The SONOS control API is not yet public, therefore the source code is private. If you have questions or would like to contribute, please feel free to [contact me](mailto:whshortridge@gmail.com).

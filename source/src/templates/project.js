@@ -79,6 +79,16 @@ const Content = styled.div`
     // box-shadow: 0 20px 40px rgba(0,0,0,0.05), 0 15px 12px rgba(0,0,0,0.05);
     margin: 3rem 0;
   }
+  
+  #flashContent {
+    text-align: center;
+    background: #000000;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05), 0 15px 12px rgba(0,0,0,0.05);
+  }
 `;
 
 class Project extends Component {

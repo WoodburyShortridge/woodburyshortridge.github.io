@@ -52,6 +52,7 @@ const Content = styled.div`
   video {
     display: flex;
     margin: auto;
+    width: 100%;
   }
   
   .videoWrapper {
@@ -88,6 +89,24 @@ const Content = styled.div`
     padding-top: 2rem;
     padding-bottom: 2rem;
     box-shadow: 0 20px 40px rgba(0,0,0,0.05), 0 15px 12px rgba(0,0,0,0.05);
+  }
+  blockquote {
+    border-left: 2px solid #328bff54;
+    margin-left: 0;
+    
+    p {
+      margin-left: 1rem;
+    }
+  }
+  .notice {
+    padding: 15px;
+    background-color: #fafafa;
+    border-left: 6px solid #7f7f84;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+  }
+  .notice-warning {
+    border-color: #FEAF20;
   }
 `;
 

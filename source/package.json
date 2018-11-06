@@ -32,6 +32,7 @@
     "npm": "^5.8.0",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
+    "react-loader-spinner": "^2.2.0",
     "react-overdrive": "^0.0.9",
     "react-particles-js": "^2.1.2",
     "react-reveal": "^1.2.1",

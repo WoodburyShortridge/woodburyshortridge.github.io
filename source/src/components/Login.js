@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from 'styled-components'
 import * as palette from "../../config/Style";
+import Spinner from '../animations/Spinner';
 
 const Input = styled.input`
     display: inline-flex;
@@ -39,6 +40,8 @@ const FieldSet = styled.fieldset`
       margin-top: 2rem;
       opacity: .85;
       transition: box-shadow .15s ease-in-out;
+      width: 11rem;
+      height: 3.5rem;
     }
     button:hover {
       opacity: 1;
@@ -103,6 +106,7 @@ const Content = styled.div`
     }
   }
   h4 {
+    font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -112,6 +116,7 @@ const Content = styled.div`
   video {
     display: flex;
     margin: auto;
+    width: 100%;
   }
   
   .videoWrapper {
@@ -139,6 +144,34 @@ const Content = styled.div`
     // box-shadow: 0 20px 40px rgba(0,0,0,0.05), 0 15px 12px rgba(0,0,0,0.05);
     margin: 3rem 0;
   }
+  
+  #flashContent {
+    text-align: center;
+    background: #000000;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05), 0 15px 12px rgba(0,0,0,0.05);
+  }
+  blockquote {
+    border-left: 2px solid #328bff54;
+    margin-left: 0;
+    
+    p {
+      margin-left: 1rem;
+    }
+  }
+  .notice {
+    padding: 15px;
+    background-color: #fafafa;
+    border-left: 6px solid #7f7f84;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+  }
+  .notice-warning {
+    border-color: #FEAF20;
+  }
 `;
 
 const API = 'https://api.d4isy.com/api/v1/';
@@ -153,7 +186,8 @@ export default class Login extends Component {
       password: "",
       projectBody: "",
       loggedIn: false,
-      error: false
+      error: false,
+      loading: false
     };
   }
 
@@ -169,11 +203,13 @@ export default class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    this.setState({ loading: true });
     fetch(API + this.state.password + '/' + this.props.title.replace(/\s+/g, '-').toLowerCase())
       .then( response => {
         if (!response.ok) {
           this.setState({
-            error: true
+            error: true,
+            loading: false
           });
           throw response
         }
@@ -183,7 +219,8 @@ export default class Login extends Component {
         if (data.body) {
           this.setState({
             projectBody: data.body,
-            loggedIn: true
+            loggedIn: true,
+            loading: false
           });
           this.props.onSignIn();
         }
@@ -211,7 +248,7 @@ export default class Login extends Component {
             <button
               type="submit"
             >
-              View project
+              { this.state.loading ? <Spinner/> : 'View project' }
             </button>
           </FieldSet>
         </Form>

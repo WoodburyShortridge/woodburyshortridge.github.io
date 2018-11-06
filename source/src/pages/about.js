@@ -107,7 +107,6 @@ class About extends Component {
               </a>{' '}
               with your eyes closed!{' '}
             </p>
-              <p><a rel="noopener noreferrer" target="_blank" href="https://github.com/WoodburyShortridge/woodburyshortridge.github.io/blob/master/source/README.md">My resume</a>.</p>
           </Bio>
         </Content>
       </div>

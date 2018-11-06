@@ -4,7 +4,8 @@ import * as palette from "../../config/Style";
 import Spinner from '../animations/Spinner';
 
 const Input = styled.input`
-    display: inline-flex;
+    display: flex;
+    height: 2.5rem;
     width: 100%;
     padding: .375rem .75rem;
     font-size: 1rem;

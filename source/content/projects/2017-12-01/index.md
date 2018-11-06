@@ -52,7 +52,7 @@ I built the app using React Native, a JavaScript library for building native app
 
 Try it out with your own photos: [Expo Client](https://expo.io/@woodburyshortridge/BONKER)
 
-<video controls>
+<video controls style="max-width: 400px !important;">
   <source src="https://s3.amazonaws.com/woodburyshortridge/api/v1/bonker/bonker-vid.mov" type="video/mp4">
 Your browser does not support the video tag.
 </video>

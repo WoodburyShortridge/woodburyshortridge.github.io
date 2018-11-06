@@ -13,9 +13,10 @@ color: "#06AE4C"
 protected: false
 ---
 
-This project is the design of auditory and head-up in-vehicle interfaces to allow safer completion of a secondary task: eco-driving. Eco-driving displays are meant to shape driving behavior in a fuel-efficient manner. Current research shows that visual eco-driving interfaces can reduce fuel consumption, but hinder safe driving performance due to attention decrement and workload overflow. The design decision for a head-up and auditory display was aimed to increase fuel-efficient driving behavior while maintaining driving performance. The design of both displays was driven by data from a prior participatory design card sorting study. The study, in conjunction with these designs, lead to my senior thesis (May 2016) and a conference paper for [International Conference for Auditory Display 2017](https://smartech.gatech.edu/handle/1853/58360).
+This project, out of the Georgia Tech Sonification Lab, is the design of auditory and head-up in-vehicle interfaces to allow safer completion of a secondary task: eco-driving. Eco-driving displays are meant to shape driving behavior in a fuel-efficient manner. Current research shows that visual eco-driving interfaces can reduce fuel consumption, but hinder safe driving performance due to attention decrement and workload overflow. The design decision for a head-up and auditory display was aimed to increase fuel-efficient driving behavior while maintaining driving performance and safety. Theoretical background was heavily based Wickens’ Multiple Resource Theory (MRT). Wickens proposes that the limited capacity of working memory
+creates a bottleneck when resources are exhausted. This bottleneck leads to a reduction in working memory resources for a primary task, when a secondary task of the same modality is introduced.  
 
-<video controls="" style="width: 100%;"><source src="https://woodburyshortridge.github.io/registerProj/video/ecoDriving.mp4" type="video/mp4"></video>
+The design of both displays was driven by data from a prior participatory design card sorting study. The study, in conjunction with these designs, lead to my senior thesis (May 2016) and a conference paper for [International Conference for Auditory Display 2017](https://smartech.gatech.edu/handle/1853/58360).
 
 ## Card sorting study
 
@@ -23,7 +24,10 @@ I helped develop a [card sorting program](https://github.com/WoodburyShortridge/
 
 The data from this study helped create a design guide for auditory and visual features that match a driver's mental model of the concepts they represent.
 
-![](./drags.png)
+![screen shot from drag and drop program](./drags.png)
+
+
+![graph showing results of musical scales to concepts](./graph1.png)
 
 ## Sound design
 
@@ -36,3 +40,5 @@ I designed the sounds in Ableton live, using the Max development environment ins
 Similar to the sounds, I designed each deck of icons for the head-up display following the data obtained through our study. These were designed in Illustrator, in collaboration with Yiwei Hao, a graduate industrial design student.
 
 ![](./huds.png)
+
+<video controls="" style="width: 100%;"><source src="https://woodburyshortridge.github.io/registerProj/video/ecoDriving.mp4" type="video/mp4"></video>

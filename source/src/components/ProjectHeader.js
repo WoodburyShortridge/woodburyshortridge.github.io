@@ -4,10 +4,9 @@ import Link from 'gatsby-link';
 import Overdrive from 'react-overdrive';
 import { FaExternalLinkSquare, FaGithubSquare } from 'react-icons/lib/fa';
 import { MdKeyboardArrowLeft } from 'react-icons/lib/md';
-import format from 'date-fns/format';
 import Portrait from './Portrait.js';
 import * as palette from '../../config/Style';
-import config from '../../config/SiteConfig';
+import Tilt from 'react-vanilla-tilt'
 
 const Wrapper = styled.div`
   display: flex;
@@ -104,6 +103,18 @@ const ProjLinks = styled.div`
   font-size: 2rem;
   a {
     margin: 0 0.3rem;
+    div {
+      display: inline-flex;
+      width: auto !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      background: none !important;
+      border-radius: 0 !important;
+      color: white !important;
+      font-size: inherit !important;
+      line-height: 0 !important;
+      box-shadow: none !important;
+    }
     color: white;
     svg {
       transition: transform 0.4s ease;
@@ -123,11 +134,6 @@ const ArrowBack = styled(MdKeyboardArrowLeft)`
   margin-left: 1rem;
   margin-right: 0rem;
 `;
-
-const Date = ({ date }) => {
-  const formatted = format(date, config.dateFormat);
-  return <span>{formatted}</span>;
-};
 
 const ProjectHeader = ({ avatar, name, title, date, areas, links, slug }) => (
   <div>
@@ -152,8 +158,10 @@ const ProjectHeader = ({ avatar, name, title, date, areas, links, slug }) => (
           <ProjLinks>
             {links.map(link => (
               <a key={link} href={link} rel="noopener noreferrer" target="_blank">
-                {link.includes('github.com') && <FaGithubSquare alt="github" />}
-                {!link.includes('github.com') && <FaExternalLinkSquare alt="view project" />}
+              <Tilt options={{ perspective: 1 }}>
+                  {link.includes('github.com') && <FaGithubSquare alt="github" />}
+                  {!link.includes('github.com') && <FaExternalLinkSquare alt="view project" />}
+              </Tilt>
               </a>
             ))}
           </ProjLinks>

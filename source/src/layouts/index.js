@@ -8,8 +8,14 @@ import ParticlesJS from '../components/Particles.js';
 import favicon from '../../static/logos/favicon.ico';
 import config from '../../config/SiteConfig';
 import * as palette from '../../config/Style';
+import styled from "styled-components";
 
 /* eslint no-unused-expressions: off */
+const Main = styled.div`
+  
+`;
+
+
 injectGlobal`
   body {
     background: white;
@@ -77,7 +83,7 @@ const TemplateWrapper = props => {
   const { children } = props;
 
   return (
-    <div>
+    <Main>
       <Helmet
         title={config.siteTitleAlt}
         meta={[
@@ -91,7 +97,7 @@ const TemplateWrapper = props => {
       <ParticlesJS />
       {children()}
       <Footer />
-    </div>
+    </Main>
   );
 };
 

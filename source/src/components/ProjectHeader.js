@@ -6,7 +6,7 @@ import { FaExternalLinkSquare, FaGithubSquare } from 'react-icons/lib/fa';
 import { MdKeyboardArrowLeft } from 'react-icons/lib/md';
 import Portrait from './Portrait.js';
 import * as palette from '../../config/Style';
-import Tilt from 'react-vanilla-tilt'
+// import Tilt from 'react-vanilla-tilt'
 
 const Wrapper = styled.div`
   display: flex;
@@ -103,18 +103,18 @@ const ProjLinks = styled.div`
   font-size: 2rem;
   a {
     margin: 0 0.3rem;
-    div {
-      display: inline-flex;
-      width: auto !important;
-      padding: 0 !important;
-      margin: 0 !important;
-      background: none !important;
-      border-radius: 0 !important;
-      color: white !important;
-      font-size: inherit !important;
-      line-height: 0 !important;
-      box-shadow: none !important;
-    }
+    // div {
+    //   display: inline-flex;
+    //   width: auto !important;
+    //   padding: 0 !important;
+    //   margin: 0 !important;
+    //   background: none !important;
+    //   border-radius: 0 !important;
+    //   color: white !important;
+    //   font-size: inherit !important;
+    //   line-height: 0 !important;
+    //   box-shadow: none !important;
+    // }
     color: white;
     svg {
       transition: transform 0.4s ease;
@@ -158,10 +158,8 @@ const ProjectHeader = ({ avatar, name, title, date, areas, links, slug }) => (
           <ProjLinks>
             {links.map(link => (
               <a key={link} href={link} rel="noopener noreferrer" target="_blank">
-              <Tilt options={{ perspective: 1 }}>
-                  {link.includes('github.com') && <FaGithubSquare alt="github" />}
-                  {!link.includes('github.com') && <FaExternalLinkSquare alt="view project" />}
-              </Tilt>
+                {link.includes('github.com') && <FaGithubSquare alt="github" />}
+                {!link.includes('github.com') && <FaExternalLinkSquare alt="view project" />}
               </a>
             ))}
           </ProjLinks>

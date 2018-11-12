@@ -40,7 +40,9 @@ Because the pulse wave frequency had a very large range, I created a fold-over e
 Enable Flash and click or focus the canvas below to start. Use the up/down arrow keys to change the infinite number of circles & frequency. Left/right to adjust speed & sequencing.
 
 <div class="notice notice-warning">
-        <strong>WARNING</strong> Due to hacky tone generation, this demo is very loud. Please adjust volume acordingly.
+        <i class="alert-icon"><svg viewBox="64 64 896 896" class="" data-icon="exclamation-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M464 688a48 48 0 1 0 96 0 48 48 0 1 0-96 0zM488 576h48c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8z"></path></svg></i>
+        <span class="alert-message">Warning</span>
+        <span class="alert-description">Due to hacky tone generation, this demo is very loud. Please adjust volume acordingly.</span>
 </div>
 
 <div id="flashContent">

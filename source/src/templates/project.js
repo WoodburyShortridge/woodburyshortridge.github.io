@@ -99,14 +99,33 @@ const Content = styled.div`
     }
   }
   .notice {
-    padding: 15px;
-    background-color: #fafafa;
-    border-left: 6px solid #7f7f84;
+    padding: 15px 15px 15px 64px;
+    position: relative;
+    border-radius: 4px;
+    line-height: 1.5;
     margin-bottom: 10px;
     box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
   }
   .notice-warning {
-    border-color: #FEAF20;
+    border: 1px solid #ffe58f;
+    background-color: #fffbe6;
+    
+    .alert-icon {
+      position: absolute;
+      top: 16px;
+      left: 24px;
+      font-size: 24px;
+      color: #faad14;
+    }
+    .alert-message {
+      font-size: 20px;
+      color: rgba(0,0,0,.85);
+      display: block;
+      margin-bottom: 4px;
+    }
+    .alert-description {
+      font-size: 17px;
+    }
   }
 `;
 
@@ -155,7 +174,6 @@ class Project extends Component {
         />
         <div
           style={{
-            backgroundImage: `url(${confetti})`,
             padding: `0 ${palette.CONTENT_PADDING}`,
             margin: '-10rem auto 6rem auto',
           }}

@@ -24,6 +24,9 @@ const Content = styled.div`
   p {
     font-size: 1.25rem;
     margin-top: 1rem;
+    img {
+      width: 100%;
+    }
   }
   h2 {
     font-size: 2.5rem;

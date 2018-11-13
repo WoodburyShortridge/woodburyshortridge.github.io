@@ -12,6 +12,7 @@ areas:
 color: "#4A90E2"
 protected: false
 ---
+*Georgia Tech, Sonification research project, [International Conference on Human-Computer Interaction with Mobile Devices 2016](https://www.semanticscholar.org/paper/Talkin-about-the-weather-incorporating-TalkBack-fu-Tomlinson-Schuett/7d6a0e0d1348c5d4b9ff54940fbbb8b1be7b8b32)*
 
 Our team at the Georgia Tech Sonification developed an [Android weather app](https://play.google.com/store/apps/details?id=com.sonification.accessibleweather) with a talk-back UI and enhanced the user experience for the visually impaired by creating earcons that provide the ‘glanceable’ function of visual weather icons to screen reader dependent users, resulting in a conference paper for [MobileHCI 2016](https://www.semanticscholar.org/paper/Talkin-about-the-weather-incorporating-TalkBack-fu-Tomlinson-Schuett/7d6a0e0d1348c5d4b9ff54940fbbb8b1be7b8b32).
 

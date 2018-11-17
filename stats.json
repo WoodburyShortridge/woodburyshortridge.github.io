@@ -1,20 +1,20 @@
 {
   "assetsByChunkName": {
     "path---steiner-chain-synth": [
-      "path---steiner-chain-synth-37256704fcb3b911d510.js",
-      "path---steiner-chain-synth-37256704fcb3b911d510.js.map"
+      "path---steiner-chain-synth-d5720a3f5290c79fac42.js",
+      "path---steiner-chain-synth-d5720a3f5290c79fac42.js.map"
     ],
     "path---multi-modal-eco-driving": [
-      "path---multi-modal-eco-driving-df410246337c8c75fef4.js",
-      "path---multi-modal-eco-driving-df410246337c8c75fef4.js.map"
+      "path---multi-modal-eco-driving-49ec136ac70399fbf8a8.js",
+      "path---multi-modal-eco-driving-49ec136ac70399fbf8a8.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-e3f0d74b493e7e6fdc4b.js",
       "component---src-pages-index-js-e3f0d74b493e7e6fdc4b.js.map"
     ],
     "path---bonker": [
-      "path---bonker-05bc76037f3e3bc012da.js",
-      "path---bonker-05bc76037f3e3bc012da.js.map"
+      "path---bonker-2dc8adb83657fb37306b.js",
+      "path---bonker-2dc8adb83657fb37306b.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -33,8 +33,8 @@
       "component---src-layouts-index-js-9113f047f4d37c1edc04.js.map"
     ],
     "path---index": [
-      "path---index-d1750c42c6608c0b2fe3.js",
-      "path---index-d1750c42c6608c0b2fe3.js.map"
+      "path---index-d563e7ce32a0e6f2cb21.js",
+      "path---index-d563e7ce32a0e6f2cb21.js.map"
     ],
     "commons": [
       "commons-34a78fd274a820ecca74.js",
@@ -43,26 +43,30 @@
       "build-js-styles.css.map"
     ],
     "path---e-clinic": [
-      "path---e-clinic-c6ba9233714c0224357e.js",
-      "path---e-clinic-c6ba9233714c0224357e.js.map"
+      "path---e-clinic-561a3cf4425c96ab7306.js",
+      "path---e-clinic-561a3cf4425c96ab7306.js.map"
     ],
     "path---sonified-pong": [
-      "path---sonified-pong-5a0200554adeb33367f6.js",
-      "path---sonified-pong-5a0200554adeb33367f6.js.map"
+      "path---sonified-pong-2876e165e7d12ffb9ae6.js",
+      "path---sonified-pong-2876e165e7d12ffb9ae6.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---daisy-cam": [
+      "path---daisy-cam-a81b40a9ea7c21fbfd6f.js",
+      "path---daisy-cam-a81b40a9ea7c21fbfd6f.js.map"
+    ],
     "app": [
-      "app-6fd3fac39907c00946a1.js",
+      "app-dfcc5f5a9ca26ddd7f10.js",
       "build-js-styles.css",
-      "app-6fd3fac39907c00946a1.js.map",
+      "app-dfcc5f5a9ca26ddd7f10.js.map",
       "build-js-styles.css.map"
     ],
     "path---accessible-weather": [
-      "path---accessible-weather-719fbb14cbabae1fbdad.js",
-      "path---accessible-weather-719fbb14cbabae1fbdad.js.map"
+      "path---accessible-weather-da23986b47904412c0a2.js",
+      "path---accessible-weather-da23986b47904412c0a2.js.map"
     ],
     "component---src-pages-about-js": [
       "component---src-pages-about-js-f8999e915d70397d9b13.js",

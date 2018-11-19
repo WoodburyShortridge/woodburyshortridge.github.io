@@ -60,7 +60,7 @@ I was amazed at the play-ability for Matthew, other blind gamers, and anyone see
 
 This year I am sponsoring and leading a group of Tufts University senior capstone students to attack this problem. We are currently prototyping and user-testing an underwater ultrasonic sensor system with various auditory and haptic feedback streams to facilitate independent swimming for the visually impaired community.
 
-<video controls>
+<video controls autoplay loop muted>
   <source src="https://s3.amazonaws.com/woodburyshortridge/api/v1/sonified-pong/swimg.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>

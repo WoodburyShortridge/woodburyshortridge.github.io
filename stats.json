@@ -1,20 +1,20 @@
 {
   "assetsByChunkName": {
     "path---steiner-chain-synth": [
-      "path---steiner-chain-synth-2d3f97de38b936b2f7c6.js",
-      "path---steiner-chain-synth-2d3f97de38b936b2f7c6.js.map"
+      "path---steiner-chain-synth-28d1b39855415f1f4b0d.js",
+      "path---steiner-chain-synth-28d1b39855415f1f4b0d.js.map"
     ],
     "path---multi-modal-eco-driving": [
-      "path---multi-modal-eco-driving-6a0a6135880c98e4fc94.js",
-      "path---multi-modal-eco-driving-6a0a6135880c98e4fc94.js.map"
+      "path---multi-modal-eco-driving-bcb658296a0aa483e013.js",
+      "path---multi-modal-eco-driving-bcb658296a0aa483e013.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-e3f0d74b493e7e6fdc4b.js",
       "component---src-pages-index-js-e3f0d74b493e7e6fdc4b.js.map"
     ],
     "path---bonker": [
-      "path---bonker-05bc76037f3e3bc012da.js",
-      "path---bonker-05bc76037f3e3bc012da.js.map"
+      "path---bonker-43c0c8aeee01d748995b.js",
+      "path---bonker-43c0c8aeee01d748995b.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -43,38 +43,38 @@
       "build-js-styles.css.map"
     ],
     "path---e-clinic": [
-      "path---e-clinic-fcdae93ffe90b2eda374.js",
-      "path---e-clinic-fcdae93ffe90b2eda374.js.map"
+      "path---e-clinic-3979f44cf5d082a0994b.js",
+      "path---e-clinic-3979f44cf5d082a0994b.js.map"
     ],
     "path---sonified-pong": [
-      "path---sonified-pong-6c25c0075dc1578b0efc.js",
-      "path---sonified-pong-6c25c0075dc1578b0efc.js.map"
+      "path---sonified-pong-6741d9de07f72e89de95.js",
+      "path---sonified-pong-6741d9de07f72e89de95.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---daisy-cam": [
-      "path---daisy-cam-99e153698b2b6f5dd1ef.js",
-      "path---daisy-cam-99e153698b2b6f5dd1ef.js.map"
+      "path---daisy-cam-096310584442fd35aae1.js",
+      "path---daisy-cam-096310584442fd35aae1.js.map"
     ],
     "app": [
-      "app-42f8b594bc267c6c3d4a.js",
+      "app-e1cee8e19ecffbc836d8.js",
       "build-js-styles.css",
-      "app-42f8b594bc267c6c3d4a.js.map",
+      "app-e1cee8e19ecffbc836d8.js.map",
       "build-js-styles.css.map"
     ],
     "path---accessible-weather": [
-      "path---accessible-weather-c0153a7f2ca04722e6c1.js",
-      "path---accessible-weather-c0153a7f2ca04722e6c1.js.map"
+      "path---accessible-weather-614e315c04b4536a2732.js",
+      "path---accessible-weather-614e315c04b4536a2732.js.map"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-f8999e915d70397d9b13.js",
-      "component---src-pages-about-js-f8999e915d70397d9b13.js.map"
+      "component---src-pages-about-js-191dd5b25b3d4b1a16b7.js",
+      "component---src-pages-about-js-191dd5b25b3d4b1a16b7.js.map"
     ],
     "path---conjure": [
-      "path---conjure-8a5bde92f459eb2c5ad7.js",
-      "path---conjure-8a5bde92f459eb2c5ad7.js.map"
+      "path---conjure-4b4b0c041dd199995d10.js",
+      "path---conjure-4b4b0c041dd199995d10.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",

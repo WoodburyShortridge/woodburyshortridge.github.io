@@ -90,17 +90,14 @@ class About extends Component {
           <Bio>
             <p>I like to research, design, prototype, and develop technology-based experiences.</p>
             <p>
-              For the past {this.state.age} years I've been fascinated by human interaction with technology with a
-              special appreciation multi-sensory experiences. I'm dedicated to shaping emerging technologies with the
-              end-user in mind, and have expertise working with users of varied abilities and in complex task
-              environments.
+              For the past {this.state.age} I've been fascinated by human interaction with technology with a special appreciation for multi-sensory experiences.
+              I'm dedicated to shaping emerging technologies with the end-user in mind, and have expertise working with users of varied abilities and in complex task environments.
             </p>
             <p>
-              I work primarily in the fields of human-computer interaction, user experience, user interface research &
-              design, and accessibility.
+              My work spans the fields of human-computer interaction, user experience, user interface research & design, and accessibility.
             </p>
             <p>
-              Thanks for checking out my projects, and please contact me for any inquiries or further information. And,
+              Thanks for checking out my projects. Please contact me for any inquiries or further information. And,
               if you're feeling bold, try playing{' '}
               <a rel="noopener noreferrer" target="_blank" href="http://sonifiedpong.s3-website-us-east-1.amazonaws.com">
                 sonified pong

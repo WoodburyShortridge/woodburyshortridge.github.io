@@ -1,6 +1,6 @@
 ---
-cover: "./pong.png"
-coverBlur: "./pong.png"
+cover: "./pong2.png"
+coverBlur: "./pong2.png"
 coverAlt: "The pong game user interface"
 date: "2017-11-06"
 title: "Sonified Pong"

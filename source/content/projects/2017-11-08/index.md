@@ -26,7 +26,7 @@ Unfortunately, Raspi(Raspberry Pi) live stream solutions are subpar, most are pr
 
 On the client side, I implemented the amazing [jsMPEG library](https://github.com/phoboslab/jsmpeg) to decode the MPEG websocket stream in a browser and paint to HTML5's Canvas2D. The pipeline is able to decode 720p Video at 30fps on any browser and even mobile.
 
-<video autoplay loop>
+<video autoplay loop muted>
   <source src="https://s3.amazonaws.com/woodburyshortridge/api/v1/daisy-cam/stream.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -64,7 +64,7 @@ To engage with Daisy enthusiasts, I added a [node.js emailer](https://github.com
 
 The front-end is built with the React.js library. In addition to the Canvas2D live stream, I designed an interactive photo gallery of all the machine-taken photos. To date, the model has taken over 500 photos with no false alarms!
 
-<video autoplay loop>
+<video autoplay loop muted>
   <source src="https://s3.amazonaws.com/woodburyshortridge/api/v1/daisy-cam/galley_movie.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>

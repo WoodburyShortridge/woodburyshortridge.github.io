@@ -1,9 +1,6 @@
 /* eslint import/prefer-default-export: off */
 /* eslint quotes: off */
 
-// You can grab your own pattern here:
-// http://www.heropatterns.com/
-
 export const BG_COLOR = 'white';
 
 export const COLOR = '#fff';

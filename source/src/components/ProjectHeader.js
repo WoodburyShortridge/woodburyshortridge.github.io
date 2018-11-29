@@ -6,7 +6,6 @@ import { FaExternalLinkSquare, FaGithubSquare } from 'react-icons/lib/fa';
 import { MdKeyboardArrowLeft } from 'react-icons/lib/md';
 import Portrait from './Portrait.js';
 import * as palette from '../../config/Style';
-// import Tilt from 'react-vanilla-tilt'
 
 const Wrapper = styled.div`
   display: flex;

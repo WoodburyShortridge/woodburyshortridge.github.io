@@ -28,6 +28,7 @@ const FieldSet = styled.fieldset`
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     
     button {
       background: #328bff54;

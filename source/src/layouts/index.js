@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { injectGlobal } from 'styled-components';
-
+import ParticlesJS from '../components/Particles.js';
 import SEO from '../components/SEO';
 import Footer from '../components/Footer';
-import ParticlesJS from '../components/Particles.js';
 import favicon from '../../static/logos/favicon.ico';
 import config from '../../config/SiteConfig';
 import * as palette from '../../config/Style';
 import styled from "styled-components";
+import color from "../../static/logos/color.svg";
+import bw from "../../static/logos/bw.svg";
+// import '../utils/fonts.css'
 
 /* eslint no-unused-expressions: off */
 const Main = styled.div`
@@ -79,26 +81,54 @@ injectGlobal`
   }
 `;
 
-const TemplateWrapper = props => {
-  const { children } = props;
+const ColorToggle = styled.a`
+  img {
+    width: 25px;
+    height: auto;
+    margin-bottom: 0;
+  }
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 1;
+  cursor: pointer;
+`;
 
-  return (
-    <Main>
-      <Helmet
-        title={config.siteTitleAlt}
-        meta={[
-          { name: 'description', content: 'Woodbury Shortridge fun portfolio site' },
-          { name: 'keywords', content: 'woody, woodbury, shortridge, portfolio, ux, ui, engineering, psychology, hci, ga tech, tufts, mit, balkans' },
-        ]}
-      >
-        <link rel="shortcut icon" href={favicon} />
-      </Helmet>
-      <SEO />
-      <ParticlesJS />
-      {children()}
-      <Footer />
-    </Main>
-  );
-};
+class TemplateWrapper extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      color: false,
+    };
+  }
+
+  toggleColor = (e) => {
+    e.preventDefault();
+    this.setState({ color: !this.state.color })
+  };
+
+  render () {
+    const { children } = this.props;
+    return (
+      <Main>
+        <Helmet
+          title={config.siteTitleAlt}
+          meta={[
+            { name: 'description', content: 'Woodbury Shortridge fun portfolio site' },
+            { name: 'keywords', content: 'woody, woodbury, shortridge, portfolio, ux, ui, engineering, psychology, hci, ga tech, tufts, mit, balkans' },
+          ]}
+        >
+          <link rel="shortcut icon" href={favicon} />
+        </Helmet>
+        <SEO />
+        <ParticlesJS color={this.state.color ? this.state.color : undefined}/>
+        <ColorToggle onClick={ e => this.toggleColor(e)}><img src={ !this.state.color ? color : bw } alt="fireSpot"/></ColorToggle>
+        {children()}
+        <Footer />
+      </Main>
+    );
+  }
+}
 
 export default TemplateWrapper;

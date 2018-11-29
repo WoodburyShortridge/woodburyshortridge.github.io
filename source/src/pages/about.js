@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import AboutHeader from '../components/AboutHeader';
-
+import ThreeStuff from '../components/ThreeStuff'
 import config from '../../config/SiteConfig';
 import * as palette from '../../config/Style';
 import confetti from '../../static/img/confetti_bw.png';
@@ -84,6 +84,7 @@ class About extends Component {
   render() {
     return (
       <div>
+        <ThreeStuff/>
         <AboutHeader avatar={config.avatar} name={config.name} email={config.email} socialMedia={config.socialMedia} />
         <Content>
           <Me atl="me, woodbury shortridge" src={me} />

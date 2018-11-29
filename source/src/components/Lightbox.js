@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import Overdrive from "react-overdrive";
+import Overdrive from "react-overdrive"
 
 class Lightbox extends Component {
   state = {
@@ -18,7 +18,6 @@ class Lightbox extends Component {
   };
 
   renderModal = () => {
-    const { showLightbox } = this.state;
     const { image, slug } = this.props;
     return (
       <Modal>

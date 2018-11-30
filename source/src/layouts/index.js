@@ -99,17 +99,21 @@ class TemplateWrapper extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      color: false,
+      color: "bw",
     };
   }
 
   toggleColor = (e) => {
     e.preventDefault();
-    this.setState({ color: !this.state.color })
+    let newColor = null;
+    if (this.state.color === 'bw') {
+      newColor = "color"
+    } else { newColor = "bw"}
+    this.setState({ color: newColor })
   };
 
   render () {
-    const { children } = this.props;
+    const { children, location } = this.props;
     return (
       <Main>
         <Helmet
@@ -122,8 +126,8 @@ class TemplateWrapper extends Component {
           <link rel="shortcut icon" href={favicon} />
         </Helmet>
         <SEO />
-        <ParticlesJS color={this.state.color ? this.state.color : undefined}/>
-        <ColorToggle onClick={ e => this.toggleColor(e)}><img src={ !this.state.color ? color : bw } alt="fireSpot"/></ColorToggle>
+        <ParticlesJS color={this.state.color} location={location}/>
+        <ColorToggle onClick={ e => this.toggleColor(e)}><img src={ this.state.color === 'color' ? color : bw } alt="fireSpot"/></ColorToggle>
         {children()}
         <Footer />
       </Main>

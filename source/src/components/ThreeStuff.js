@@ -70,13 +70,14 @@ class ThreeStuff extends Component {
     this.clock = new THREE.Clock();
 
     this.mount.appendChild(this.renderer.domElement);
-    this.start()
+    this.start();
+
+    document.body.addEventListener("mousemove", this.handleMouse, true);
   }
 
-  onMouseMove(e) {
-    this.setState({ x: e.screenX, y: e.screenY - 600});
-  }
-
+  handleMouse = (event) => {
+    this.setState({ x: event.screenX, y: event.screenY - 600});
+  };
 
   random = ( min, max ) => {
     if ( isNaN(max) ) {
@@ -88,7 +89,8 @@ class ThreeStuff extends Component {
 
   componentWillUnmount() {
     this.stop();
-    this.mount.removeChild(this.renderer.domElement)
+    this.mount.removeChild(this.renderer.domElement);
+    document.body.removeEventListener('mousemove', this.handleMouse, true);
   }
 
   start() {
@@ -125,7 +127,6 @@ class ThreeStuff extends Component {
           <div
             style={{ width: '100%', height: '600px' }}
             ref={(mount) => { this.mount = mount }}
-            onMouseMove={this.onMouseMove.bind(this)}
           />
         </ThreeGrad>
         <SvgWave

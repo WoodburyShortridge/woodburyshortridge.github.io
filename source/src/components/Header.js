@@ -87,7 +87,7 @@ const Header = ({ avatar, name, socialMedia }) => (
           <Name>{name}</Name>
         </Overdrive>
         <Blurb>
-          Hi, I'm Woody, a designer, prototyper, developer...
+          Hi, I'm Woody, an engineer, designer, prototyper...
           <AboutLink to="/about">more about me</AboutLink>
         </Blurb>
         <SocialMedia>

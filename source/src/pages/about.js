@@ -6,6 +6,7 @@ import config from '../../config/SiteConfig';
 import * as palette from '../../config/Style';
 import confetti from '../../static/img/confetti_bw.png';
 import me from '../../static/img/me.png';
+import cv from '../../static/img/Woodbury_Shortridge.pdf';
 
 const Content = styled.div`
   max-width: ${palette.MAX_WIDTH}px;
@@ -95,7 +96,12 @@ class About extends Component {
               I'm dedicated to shaping emerging technologies with the end-user in mind, and have expertise working with users of varied abilities and in complex task environments.
             </p>
             <p>
-              My work spans the fields of human-computer interaction, user experience, user interface research & design, and accessibility.
+              My work spans the fields of human-computer interaction, software engineering, user experience & interface design, and accessibility.
+            </p>
+            <p>
+              <a rel="noopener noreferrer" target="_blank" href={cv}>
+                my CV
+              </a>
             </p>
             <p>
               Thanks for checking out my projects. Please contact me for any inquiries or further information. And,
@@ -112,3 +118,12 @@ class About extends Component {
   }
 }
 module.exports = About;
+
+{/*<h3>Research Interests</h3>*/}
+{/*<ul>*/}
+{/*<li>Human Computer Interaction</li>*/}
+{/*<li>Artificial Intelligence</li>*/}
+{/*<li>non-WIMP user interfaces</li>*/}
+{/*<li>Interaction Design</li>*/}
+{/*<li>Edge computing</li>*/}
+{/*</ul>*/}

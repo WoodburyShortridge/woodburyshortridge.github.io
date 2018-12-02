@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import styled from 'styled-components';
 import config from '../../config/SiteConfig';
 
@@ -57,11 +58,6 @@ const Footer = () => (
         <img src={config.styled} alt="styled components" />
       </Avatar>
     </a>
-    <a href="http://www.sketchconfetti.com" target="_blank">
-      <Avatar>
-        <img src={config.confetti} alt="Sketch confetti" />
-      </Avatar>
-    </a>
     </IconGroup>
     <br />
     <p>
@@ -70,9 +66,9 @@ const Footer = () => (
         href="https://github.com/WoodburyShortridge/woodburyshortridge.github.io/tree/master/source"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        Github repository
-      </a>!
+      > Github repository
+      </a> &nbsp; and find &nbsp;
+      <Link to={"/about"}> more about me</Link>
     </p>
   </Content>
 );

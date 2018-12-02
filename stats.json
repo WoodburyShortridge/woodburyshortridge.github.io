@@ -1,40 +1,40 @@
 {
   "assetsByChunkName": {
     "path---steiner-chain-synth": [
-      "path---steiner-chain-synth-c9f3de46b7f1e82eddc8.js",
-      "path---steiner-chain-synth-c9f3de46b7f1e82eddc8.js.map"
+      "path---steiner-chain-synth-42d94059f1b14a4631f4.js",
+      "path---steiner-chain-synth-42d94059f1b14a4631f4.js.map"
     ],
     "path---multi-modal-eco-driving": [
-      "path---multi-modal-eco-driving-2096ac1f46a424428e17.js",
-      "path---multi-modal-eco-driving-2096ac1f46a424428e17.js.map"
+      "path---multi-modal-eco-driving-bd11e3ad4796cfde912e.js",
+      "path---multi-modal-eco-driving-bd11e3ad4796cfde912e.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-ef76c32e47ec67963235.js",
-      "component---src-pages-index-js-ef76c32e47ec67963235.js.map"
+      "component---src-pages-index-js-12ace5c722c2284cd116.js",
+      "component---src-pages-index-js-12ace5c722c2284cd116.js.map"
     ],
     "path---bonker": [
-      "path---bonker-5b3c64fd2b5eb36a8eb0.js",
-      "path---bonker-5b3c64fd2b5eb36a8eb0.js.map"
+      "path---bonker-6ef6c6d804cb7a0809ec.js",
+      "path---bonker-6ef6c6d804cb7a0809ec.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---eye-tracking-glasses": [
-      "path---eye-tracking-glasses-7de21a2b80292e88ada6.js",
-      "path---eye-tracking-glasses-7de21a2b80292e88ada6.js.map"
+      "path---eye-tracking-glasses-4abb4d769cdec202eab0.js",
+      "path---eye-tracking-glasses-4abb4d769cdec202eab0.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-templates-project-js": [
-      "component---src-templates-project-js-e2fd65069eac40b5b4e3.js",
-      "component---src-templates-project-js-e2fd65069eac40b5b4e3.js.map"
+      "component---src-templates-project-js-343d68c8ec4e31829198.js",
+      "component---src-templates-project-js-343d68c8ec4e31829198.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-1cda483a448370e43097.js",
-      "component---src-layouts-index-js-1cda483a448370e43097.js.map"
+      "component---src-layouts-index-js-602540c7788b18e8c5d2.js",
+      "component---src-layouts-index-js-602540c7788b18e8c5d2.js.map"
     ],
     "path---index": [
       "path---index-45d17c2f70e8f6a1b896.js",
@@ -47,34 +47,34 @@
       "build-js-styles.css.map"
     ],
     "path---sonified-pong": [
-      "path---sonified-pong-710d6d5f66658e7be0fe.js",
-      "path---sonified-pong-710d6d5f66658e7be0fe.js.map"
+      "path---sonified-pong-b4830b65afdb12ce5c92.js",
+      "path---sonified-pong-b4830b65afdb12ce5c92.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---daisy-cam": [
-      "path---daisy-cam-49f55a2f325ed5463198.js",
-      "path---daisy-cam-49f55a2f325ed5463198.js.map"
+      "path---daisy-cam-2f1c9b45d18e01f65ff3.js",
+      "path---daisy-cam-2f1c9b45d18e01f65ff3.js.map"
     ],
     "app": [
-      "app-168a72189c95079dc3eb.js",
+      "app-55149cf4f12a95b50e02.js",
       "build-js-styles.css",
-      "app-168a72189c95079dc3eb.js.map",
+      "app-55149cf4f12a95b50e02.js.map",
       "build-js-styles.css.map"
     ],
     "path---accessible-weather": [
-      "path---accessible-weather-6b4f156af858ce0aab9a.js",
-      "path---accessible-weather-6b4f156af858ce0aab9a.js.map"
+      "path---accessible-weather-41a853fc47af223d94eb.js",
+      "path---accessible-weather-41a853fc47af223d94eb.js.map"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-edefb9b7dc1dee083069.js",
-      "component---src-pages-about-js-edefb9b7dc1dee083069.js.map"
+      "component---src-pages-about-js-a44bb77f3c7fd03c32f1.js",
+      "component---src-pages-about-js-a44bb77f3c7fd03c32f1.js.map"
     ],
     "path---conjure": [
-      "path---conjure-4bee63c339756164ea02.js",
-      "path---conjure-4bee63c339756164ea02.js.map"
+      "path---conjure-2a7d9ebe96ddd620ca53.js",
+      "path---conjure-2a7d9ebe96ddd620ca53.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",

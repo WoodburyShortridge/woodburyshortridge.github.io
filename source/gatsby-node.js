@@ -7,12 +7,6 @@ exports.onCreateNode = ({ node, boundActionCreators }) => {
   if (node.internal.type === 'MarkdownRemark') {
     if (
       Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
-    ) {
-      slug = `/${_.kebabCase(node.frontmatter.slug)}`;
-    }
-    if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
     ) {
       slug = `/${_.kebabCase(node.frontmatter.title)}`;
@@ -29,7 +23,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     resolve(
       graphql(`
         {
-          projects: allMarkdownRemark {
+          projects: allMarkdownRemark(sort: { fields: [frontmatter___date] }) {
             edges {
               node {
                 fields {
@@ -37,6 +31,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 }
                 frontmatter {
                   title
+                  date
                 }
               }
             }
@@ -54,6 +49,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         projectPosts.forEach((edge, index) => {
           const next = index === 0 ? null : projectPosts[index - 1].node;
           const prev = index === projectPosts.length - 1 ? null : projectPosts[index + 1].node;
+          console.log(edge.node.fields.slug);
 
           createPage({
             path: edge.node.fields.slug,

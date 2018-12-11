@@ -2,6 +2,7 @@ import React , { Component } from 'react';
 import styled from 'styled-components';
 import Particles from 'react-particles-js';
 import particlesConfig from '../animations/particles-config.json';
+import genart from '../../static/img/genart.svg'
 
 const SvgWave = styled.svg`
   position: absolute;
@@ -24,6 +25,14 @@ const ParticlesGrad = styled.div`
   animation: Gradient 35s ease infinite;
 `;
 
+const Genart = styled.div`
+  background-image: url(${genart});
+  opacity: .13;
+  background-repeat: repeat;
+  background-position: center;
+  // background-size: 105% 105%;
+`;
+
 class ParticlesJS extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +41,9 @@ class ParticlesJS extends Component {
   render () {
     return (
       <ParticlesGrad color={this.props.color}>
-        <Particles height={600} params={particlesConfig} style={{ opacity: this.props.location.pathname === "/about" ? 0 : 1}} />
+        <Genart>
+          <Particles height={600} params={particlesConfig} style={{ opacity: this.props.location.pathname === "/about" ? 0 : 1}} />
+        </Genart>
         <SvgWave
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 54 14"

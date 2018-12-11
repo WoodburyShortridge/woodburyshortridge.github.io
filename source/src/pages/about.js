@@ -12,7 +12,7 @@ const Content = styled.div`
   max-width: ${palette.MAX_WIDTH}px;
   padding: 0;
   position: relative;
-  background-image: url(${confetti});
+  // background-image: url(${confetti});
   margin-left: 1rem;
   margin-right: 1rem;
 `;

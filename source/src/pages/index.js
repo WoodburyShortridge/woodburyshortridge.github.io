@@ -32,7 +32,7 @@ const Content = styled.div`
   max-width: ${palette.MAX_WIDTH}px;
   padding: 0;
   position: relative;
-  background-image: url(${confetti});
+  // background-image: url(${confetti});
 `;
 
 const Index = props => {

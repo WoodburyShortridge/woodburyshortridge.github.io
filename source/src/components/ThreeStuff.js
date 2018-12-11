@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import * as THREE from 'three'
 import styled from 'styled-components';
+import genart from "../../static/img/genart.svg";
 
 const SvgWave = styled.svg`
   position: absolute;
@@ -22,6 +23,14 @@ const ThreeGrad = styled.div`
   background-size:400% 400%;
   // animation: Gradient 35s ease infinite;
   opacity: .5;
+`;
+
+const Genart = styled.div`
+  background-image: url(${genart});
+  opacity: .15;
+  background-repeat: repeat;
+  background-position: center;
+  // background-size: 105% 105%;
 `;
 
 class ThreeStuff extends Component {
@@ -123,12 +132,14 @@ class ThreeStuff extends Component {
   render() {
     return (
       <div>
-        <ThreeGrad color={this.props.color} >
-          <div
-            style={{ width: '100%', height: '600px' }}
-            ref={(mount) => { this.mount = mount }}
-          />
-        </ThreeGrad>
+        <Genart>
+          <ThreeGrad color={this.props.color} >
+            <div
+              style={{ width: '100%', height: '600px' }}
+              ref={(mount) => { this.mount = mount }}
+            />
+          </ThreeGrad>
+        </Genart>
         <SvgWave
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 54 14"

@@ -70,8 +70,8 @@
   "scripts": {
     "dev": "gatsby develop -o",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "build": "rm -r .cache && gatsby build",
-    "postbuild": "cp -r public/* ~/GitHub/woodburyshortridge.github.io"
+    "build": "rm -r .cache && rm -r public && gatsby build",
+    "postbuild": "cd ../ && cp -r source/public/* ./"
   },
   "browserslist": [
     "> 1%",

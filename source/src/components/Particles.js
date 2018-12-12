@@ -20,7 +20,7 @@ const ParticlesGrad = styled.div`
   width: 100%;
   position: absolute;
   z-index: -1;
-  background: ${props => (props.color === "color" ? 'linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB)' : 'linear-gradient(-45deg,hsla(0,0%,0%,0.8),#333,hsla(0,0%,0%,0.5),#555)')};
+  background: ${props => (props.color === "color" ? 'linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB)' : '#555')};
   background-size:400% 400%;
   animation: Gradient 35s ease infinite;
 `;

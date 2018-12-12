@@ -3,7 +3,7 @@ cover: "./screen.png"
 coverBlur: "./screen.png"
 coverAlt: "Weather sonification app"
 date: "2017-11-03"
-title: "Accessible weather"
+title: "Accessible Weather"
 links:
     - https://github.com/WoodburyShortridge/mobileA11yWeather
     - https://play.google.com/store/apps/details?id=com.sonification.accessibleweather

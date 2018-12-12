@@ -9,6 +9,6 @@ links:
 
 areas:
     - Web-cam hacking for way-finding
-color: "#f06292"
+color: "#7A7BF7"
 protected: true
 ---

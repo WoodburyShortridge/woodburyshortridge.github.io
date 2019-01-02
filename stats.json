@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "path---steiner-chain-synth": [
-      "path---steiner-chain-synth-d13eb4698b8aec4f0c37.js",
-      "path---steiner-chain-synth-d13eb4698b8aec4f0c37.js.map"
+      "path---steiner-chain-synth-4b4ca94473769551cf8b.js",
+      "path---steiner-chain-synth-4b4ca94473769551cf8b.js.map"
     ],
     "path---multi-modal-eco-driving": [
       "path---multi-modal-eco-driving-bd11e3ad4796cfde912e.js",
@@ -37,8 +37,8 @@
       "component---src-layouts-index-js-8897f4e2de006d8d71c0.js.map"
     ],
     "path---index": [
-      "path---index-7d6d33a65762f7783cc7.js",
-      "path---index-7d6d33a65762f7783cc7.js.map"
+      "path---index-d67e71496715009f32eb.js",
+      "path---index-d67e71496715009f32eb.js.map"
     ],
     "commons": [
       "commons-34a78fd274a820ecca74.js",
@@ -54,14 +54,18 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---tongue-comp-interface": [
+      "path---tongue-comp-interface-a8216075479350b5f493.js",
+      "path---tongue-comp-interface-a8216075479350b5f493.js.map"
+    ],
     "path---daisy-cam": [
       "path---daisy-cam-2f1c9b45d18e01f65ff3.js",
       "path---daisy-cam-2f1c9b45d18e01f65ff3.js.map"
     ],
     "app": [
-      "app-55149cf4f12a95b50e02.js",
+      "app-87cba4e38e8481e0020f.js",
       "build-js-styles.css",
-      "app-55149cf4f12a95b50e02.js.map",
+      "app-87cba4e38e8481e0020f.js.map",
       "build-js-styles.css.map"
     ],
     "path---accessible-weather": [

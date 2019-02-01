@@ -1,5 +1,5 @@
-# Woodbury Shortridge
+## fun little portfolio
 
-[woodburyshortridge.github.io](https://woodburyshortridge.github.io)
+thanks to react, gatsby, styled components, particles.js etc.
 
-whshortridge@gmail.com
+live @ [woodburyshortridge.github.io](https://woodburyshortridge.github.io)

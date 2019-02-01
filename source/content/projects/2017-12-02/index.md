@@ -5,7 +5,7 @@ coverAlt: "Person feeling a tangible face"
 date: "2017-12-02"
 title: "CONJURE"
 links:
-    - https://tangible.media.mit.edu
+    - https://www.media.mit.edu/projects/conjugate/overview/
 areas:
     - Physical Access to Rapidly-Changing Digital Information
 color: "#4A90E2"

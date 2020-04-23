@@ -14,6 +14,8 @@ protected: false
 
 “Conjure” is a collaboration  with Professor Hiroshi Ishii's Tangible Media Group, what started as a class project has turned into an ongoing design exploration, re-thinking methods of access to rapidly-changing digital information.. Our team includes Dan Levine, Kalli Retzepi, and Jesper Alkestup. Our prototypes, developed in concert with blind participants, demonstrate a proof-of-concept for a new realm of information display, most recently leading to a CHI2019 paper submission.
 
+[Media Lab Link](https://www.media.mit.edu/projects/conjugate/overview/)
+
 ## Premise
 
 Assistive technologies are siloed within their own paradigm and treated as irrelevant to significant advancements in graphic design. We started with the premise that techniques, organizational advantages, and forms from modern graphical interfaces can be translated into physical, tangible interfaces, which are accessible to blind individuals. Rather than bypassing these visual elements, our prototypes explore methods for rendering them to a dynamic shape display.
